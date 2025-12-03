@@ -1,0 +1,62 @@
+# ======================================
+# Next.js / React Project .gitignore
+# ======================================
+
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Optional: prevent compressed artifacts
+*.gz
+*.br
+
+# Optional: local script outputs
+*.log
+
+# Yarn Berry
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Turbo repo cache
+.turbo/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+jest-cache/
+jest-temp/

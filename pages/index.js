@@ -21,15 +21,35 @@ export default function Home() {
       }}
     >
       {/* Content container */}
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+        {/* Logo */}
+        <div style={{ marginBottom: '0' }}>
+          <img
+            src="/favicon.ico"
+            alt="DJ Hitterman Logo"
+            style={{
+              width: '120px',
+              height: '120px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+              boxShadow: '0 8px 20px rgba(0,0,0,0.15)',
+              transition: 'transform 0.3s ease',
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = 'scale(1.05)')
+            }
+            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+          />
+        </div>
+
         {/* Title */}
         <h1
           style={{
             fontSize: '3.5rem',
             fontWeight: '900',
             letterSpacing: '-1px',
-            textAlign: 'center',
             marginBottom: '2rem',
+            marginTop: '0.5rem',
             background: 'linear-gradient(90deg, #c4d6a1, #8b9b5f)',
             WebkitBackgroundClip: 'text',
             color: 'transparent',
@@ -64,17 +84,17 @@ export default function Home() {
                 '0 12px 25px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.05)';
             }}
           >
-            {/* Title */}
+            {/* Mix Title */}
             <h2
               style={{
                 margin: 0,
                 fontSize: '1.9rem',
                 fontWeight: '800',
-                textAlign: 'center',
                 background: 'linear-gradient(90deg, #8fa76c, #6b7d45)',
                 WebkitBackgroundClip: 'text',
                 color: 'transparent',
                 letterSpacing: '-0.5px',
+                textAlign: 'center',
               }}
             >
               {mix.title}

@@ -37,7 +37,6 @@ Thumbs.db
 # Optional: prevent compressed artifacts
 *.gz
 *.br
-.pack.gz
 
 # Optional: local script outputs
 *.log

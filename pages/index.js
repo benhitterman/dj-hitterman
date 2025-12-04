@@ -111,6 +111,11 @@ export default function Home() {
             >
               <audio
                 controls
+                onPlay={() =>
+                  window.gtag('event', 'mix_play', {
+                    mix_title: mix.title,
+                  })
+                }
                 style={{
                   width: '100%',
                   borderRadius: '12px',

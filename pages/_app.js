@@ -8,6 +8,20 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>DJ Hitterman</title>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FCNMEHS748"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+      `,
+          }}
+        />
       </Head>
       <Component {...pageProps} />
       <Analytics />

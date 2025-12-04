@@ -100,6 +100,7 @@ export default function Home() {
             <p
               style={{
                 marginTop: '0.5rem',
+                marginBottom: '0',
                 fontSize: '1rem',
                 color: '#333',
                 textAlign: 'center',

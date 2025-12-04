@@ -3,10 +3,12 @@ export default function Home() {
     {
       title: 'House Mix 01',
       url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
+      description: 'An upbeat house mix full of energy and good vibes',
     },
     {
       title: 'House Mix 02',
       url: 'https://ia903402.us.archive.org/18/items/house-mix-02-hitterman/01%20House%20Mix%2002.mp3',
+      description: 'A house mix of remixed familiar hits and fresh tracks',
     },
   ];
 
@@ -20,9 +22,7 @@ export default function Home() {
         color: '#111',
       }}
     >
-      {/* Content container */}
       <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-        {/* Logo */}
         <div style={{ marginBottom: '0' }}>
           <img
             src="/favicon.ico"
@@ -42,7 +42,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Title */}
         <h1
           style={{
             fontSize: '3.5rem',
@@ -58,7 +57,6 @@ export default function Home() {
           DJ HITTERMAN
         </h1>
 
-        {/* Mix Cards */}
         {mixes.map((mix, index) => (
           <div
             key={index}
@@ -84,7 +82,6 @@ export default function Home() {
                 '0 12px 25px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.05)';
             }}
           >
-            {/* Mix Title */}
             <h2
               style={{
                 margin: 0,
@@ -100,10 +97,22 @@ export default function Home() {
               {mix.title}
             </h2>
 
-            {/* Audio Player */}
+            <p
+              style={{
+                marginTop: '0.5rem',
+                fontSize: '1rem',
+                color: '#333',
+                textAlign: 'center',
+                fontStyle: 'italic',
+              }}
+            >
+              {mix.description}
+            </p>
+
             <div
               style={{
-                marginTop: '1.2rem',
+                marginTop: '0.5rem',
+                paddingTop: '0',
                 padding: '1rem',
                 borderRadius: '18px',
                 background: 'linear-gradient(145deg, #ffffffcc, #f5f8f1cc)',
@@ -115,11 +124,7 @@ export default function Home() {
                   if (typeof window.gtag !== 'function') return;
                   window.gtag('event', 'mix_play', { mix_title: mix.title });
                 }}
-                style={{
-                  width: '100%',
-                  borderRadius: '12px',
-                  outline: 'none',
-                }}
+                style={{ width: '100%', borderRadius: '12px', outline: 'none' }}
               >
                 <source src={mix.url} type="audio/mpeg" />
               </audio>

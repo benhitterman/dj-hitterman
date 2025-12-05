@@ -3,12 +3,12 @@ export default function Home() {
     {
       title: 'House Mix 01',
       url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
-      description: 'An upbeat house mix full of energy and good vibes',
+      description: 'Upbeat house mix full of energy and good vibes',
     },
     {
       title: 'House Mix 02',
       url: 'https://ia903402.us.archive.org/18/items/house-mix-02-hitterman/01%20House%20Mix%2002.mp3',
-      description: 'A house mix of remixed familiar hits and fresh tracks',
+      description: 'House mix of remixed familiar hits and fresh tracks',
     },
   ];
 

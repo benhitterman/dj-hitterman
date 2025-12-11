@@ -4,16 +4,19 @@ export default function Home() {
       title: 'House Mix 01',
       url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
       description: 'Upbeat, full of energy and good vibes',
+      date: '2025-11-06',
     },
     {
       title: 'House Mix 02',
       url: 'https://ia903402.us.archive.org/18/items/house-mix-02-hitterman/01%20House%20Mix%2002.mp3',
       description: 'Remixed familiar hits and fresh tracks',
+      date: '2025-11-09',
     },
     {
       title: 'Experts Only Mix',
       url: 'https://dn721900.ca.archive.org/0/items/experts-only-mix-hitterman/Experts%20Only%20Mix.mp3',
       description: 'Some of my favourite Experts Only tracks',
+      date: '2025-12-06',
     },
   ];
 
@@ -66,6 +69,7 @@ export default function Home() {
           <div
             key={index}
             style={{
+              position: 'relative',
               background: 'linear-gradient(145deg, #ffffffcc, #f5f8f1cc)',
               padding: '1.2rem',
               borderRadius: '24px',
@@ -87,6 +91,26 @@ export default function Home() {
                 '0 12px 25px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.05)';
             }}
           >
+            <div
+              style={{
+                position: 'absolute',
+                top: '12px',
+                right: '16px',
+                fontSize: '0.8rem',
+                color: '#111',
+                background: 'rgba(255,255,255,0.6)',
+                padding: '4px 10px',
+                borderRadius: '12px',
+                backdropFilter: 'blur(4px)',
+              }}
+            >
+              {new Date(mix.date).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </div>
+
             <h2
               style={{
                 margin: 0,

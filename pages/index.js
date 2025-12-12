@@ -22,7 +22,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Mobile style adjustments */}
       <style>{`
         @media (max-width: 480px) {
           .date-badge {
@@ -109,6 +108,7 @@ export default function Home() {
               }}
             >
               <div
+                className="date-badge"
                 style={{
                   position: 'absolute',
                   top: '12px',

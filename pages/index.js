@@ -1,10 +1,16 @@
 export default function Home() {
   const mixes = [
     {
-      title: 'House Mix 01',
-      url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
-      description: 'Upbeat, full of energy and good vibes',
-      date: '2025-11-06',
+      title: `it's murph Mix`,
+      url: 'https://ia902907.us.archive.org/14/items/its-murph-mix-hitterman/it%27s%20murph%20Mix.mp3',
+      description: `High-energy, feel-good it's murph originals and remixes`,
+      date: '2026-01-07',
+    },
+    {
+      title: 'Experts Only Mix',
+      url: 'https://dn721900.ca.archive.org/0/items/experts-only-mix-hitterman/Experts%20Only%20Mix.mp3',
+      description: 'Some of my favourite Experts Only tracks',
+      date: '2025-12-06',
     },
     {
       title: 'House Mix 02',
@@ -13,12 +19,17 @@ export default function Home() {
       date: '2025-11-09',
     },
     {
-      title: 'Experts Only Mix',
-      url: 'https://dn721900.ca.archive.org/0/items/experts-only-mix-hitterman/Experts%20Only%20Mix.mp3',
-      description: 'Some of my favourite Experts Only tracks',
-      date: '2025-12-06',
+      title: 'House Mix 01',
+      url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
+      description: 'Upbeat, full of energy and good vibes',
+      date: '2025-11-06',
     },
   ];
+
+  function toLocalDate(dateStr) {
+    const [year, month, day] = dateStr.split('-').map(Number);
+    return new Date(year, month - 1, day); // month is 0-based
+  }
 
   return (
     <>
@@ -118,7 +129,7 @@ export default function Home() {
                   padding: '4px 10px',
                 }}
               >
-                {new Date(mix.date).toLocaleDateString('en-US', {
+                {new toLocalDate(mix.date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
                   year: 'numeric',

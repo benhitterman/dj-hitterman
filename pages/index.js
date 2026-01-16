@@ -1,6 +1,12 @@
 export default function Home() {
   const mixes = [
     {
+      title: `Disco Lines Mix`,
+      url: 'https://ia601704.us.archive.org/8/items/disco-lines-mix-hitterman/01%20Disco%20Lines%20Mix.mp3',
+      description: `Disco Lines' best tracks, full of bouncy basslines and feel-good energy`,
+      date: '2026-01-15',
+    },
+    {
       title: `it's murph Mix`,
       url: 'https://ia902907.us.archive.org/14/items/its-murph-mix-hitterman/it%27s%20murph%20Mix.mp3',
       description: `High-energy, feel-good it's murph originals and remixes`,

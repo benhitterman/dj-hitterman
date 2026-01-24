@@ -2,31 +2,31 @@ export default function Home() {
   const mixes = [
     {
       title: `Disco Lines Mix`,
-      url: 'https://ia601704.us.archive.org/8/items/disco-lines-mix-hitterman/01%20Disco%20Lines%20Mix.mp3',
+      url: 'https://ia601609.us.archive.org/18/items/01-disco-lines-mix-hitterman/01%20Disco%20Lines%20Mix.mp3',
       description: `Disco Lines' best tracks, full of bouncy basslines and feel-good energy`,
       date: '2026-01-15',
     },
     {
       title: `it's murph Mix`,
-      url: 'https://ia902907.us.archive.org/14/items/its-murph-mix-hitterman/it%27s%20murph%20Mix.mp3',
+      url: 'https://ia600802.us.archive.org/16/items/its-murph-mix-hitterman_202601/it%27s%20murph%20Mix.mp3',
       description: `High-energy, feel-good it's murph originals and remixes`,
       date: '2026-01-07',
     },
     {
       title: 'Experts Only Mix',
-      url: 'https://dn721900.ca.archive.org/0/items/experts-only-mix-hitterman/Experts%20Only%20Mix.mp3',
+      url: 'https://ia601501.us.archive.org/2/items/experts-only-mix-hitterman_202601/Experts%20Only%20Mix.mp3',
       description: 'Some of my favourite Experts Only tracks',
       date: '2025-12-06',
     },
     {
       title: 'House Mix 02',
-      url: 'https://ia903402.us.archive.org/18/items/house-mix-02-hitterman/01%20House%20Mix%2002.mp3',
+      url: 'https://ia600801.us.archive.org/2/items/house-mix-02-hitterman_202601/01%20House%20Mix%2002.mp3',
       description: 'Remixed familiar hits and fresh tracks',
       date: '2025-11-09',
     },
     {
       title: 'House Mix 01',
-      url: 'https://ia601702.us.archive.org/8/items/House-Mix-01-Hitterman/01%20Mix%201.mp3',
+      url: 'https://ia600800.us.archive.org/5/items/house-mix-01-hitterman_202601/01%20Mix%201.mp3',
       description: 'Upbeat, full of energy and good vibes',
       date: '2025-11-06',
     },

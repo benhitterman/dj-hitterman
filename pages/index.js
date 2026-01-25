@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 export default function Home() {
   const mixes = [
     {
@@ -49,6 +51,24 @@ export default function Home() {
           }
         }
       `}</style>
+
+      <Head>
+        <title>DJ Hitterman | DJ Mixes & Sets</title>
+        <meta
+          name="description"
+          content="Stream DJ Hitterman’s latest house mixes."
+        />
+        <link rel="canonical" href="https://dj-hitterman.vercel.app/" />
+
+        {/* Social preview info */}
+        <meta property="og:title" content="DJ Hitterman | DJ Mixes" />
+        <meta
+          property="og:description"
+          content="Stream DJ Hitterman’s latest mixes."
+        />
+        <meta property="og:url" content="https://dj-hitterman.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 
       <div
         style={{

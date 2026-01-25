@@ -108,7 +108,7 @@ export default function Home() {
               fontSize: '3.5rem',
               fontWeight: '900',
               letterSpacing: '-1px',
-              marginBottom: '2rem',
+              marginBottom: '0.5rem',
               marginTop: '0.5rem',
               background: 'linear-gradient(90deg, #c4d6a1, #8b9b5f)',
               WebkitBackgroundClip: 'text',
@@ -117,6 +117,96 @@ export default function Home() {
           >
             DJ HITTERMAN
           </h1>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '1.25rem',
+              marginBottom: '1rem',
+            }}
+          >
+            <a
+              href="https://www.instagram.com/djhitterman"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              style={{ display: 'inline-flex' }}
+            >
+              <img
+                src="/instagram.svg"
+                alt="Instagram"
+                style={{
+                  width: '28px',
+                  height: '28px',
+                  opacity: 0.85,
+                  transition: 'transform 0.2s ease, opacity 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.15)';
+                  e.currentTarget.style.opacity = '1';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.opacity = '0.85';
+                }}
+              />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@djhitterman"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              style={{ display: 'inline-flex' }}
+            >
+              <img
+                src="/tiktok.svg"
+                alt="TikTok"
+                style={{
+                  width: '28px',
+                  height: '28px',
+                  opacity: 0.85,
+                  transition: 'transform 0.2s ease, opacity 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.15)';
+                  e.currentTarget.style.opacity = '1';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.opacity = '0.85';
+                }}
+              />
+            </a>
+
+            <a
+              href="https://soundcloud.com/hitterman-775996149"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Soundcloud"
+              style={{ display: 'inline-flex' }}
+            >
+              <img
+                src="/soundcloud.svg"
+                alt="Soundcloud"
+                style={{
+                  width: '28px',
+                  height: '28px',
+                  opacity: 0.85,
+                  transition: 'transform 0.2s ease, opacity 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.15)';
+                  e.currentTarget.style.opacity = '1';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.opacity = '0.85';
+                }}
+              />
+            </a>
+          </div>
 
           {mixes.map((mix, index) => (
             <div
